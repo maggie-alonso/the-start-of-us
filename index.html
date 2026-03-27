@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For You 💖</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --primary: #5A4FCF;
+  --accent: #8A6FE8;
+  --light: #F3EEFF;
+  --deep: #3D2F7A;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 25px;
+  background: var(--light);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.section {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-weight: 600;
+  color: var(--deep);
+}
+
+p { color: #444; }
+
+img {
+  width: 100%;
+  max-height: 65vh;
+  object-fit: contain;
+  border-radius: 16px;
+  margin-top: 12px;
+}
+
+.hidden { display: none; }
+
+/* BOTONES */
+button {
+  padding: 14px 20px;
+  border: none;
+  border-radius: 25px;
+  background: var(--accent);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+  background: var(--primary);
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.nav-buttons button {
+  flex: 1;
+}
+
+/* FINAL LIMPIO */
+.reveal {
+  background: transparent;
+  color: var(--deep);
+  padding: 20px;
+}
+
+.reveal h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.reveal p {
+  font-size: 16px;
+  color: #555;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="section" id="s1">
+<h1>Hi you 💘</h1>
+<p>I made something small for you...</p>
+</div>
+
+<div class="section hidden" id="s2">
+<h1>This Story is Called</h1>
+<p><b>The Day Everything Began</b></p>
+</div>
+
+<div class="section hidden" id="s3">
+<h1>The First Message</h1>
+<p>It seemed like a casual reply… but it was the start of everything 🥰</p>
+<img src="began.jpg">
+</div>
+
+<div class="section hidden" id="s4">
+<h1>Without Realizing It</h1>
+<p>We kept talking…</p>
+<p>A little more each day...</p>
+<p style="font-size:20px;">And somehow, our conversations became everything</p>
+<img src="chats.jpg">
+</div>
+
+<div class="section hidden" id="s5">
+<h1>Then... It Started to Feel Different</h1>
+<p>It was YOU, it was US 💖</p>
+<img src="cuerna25.jpg">
+</div>
+
+<div class="section hidden" id="s6">
+<h1>Even with The Distance</h1>
+<p>We’ve built something real 🫶</p>
+<img src="collage.jpeg">
+</div>
+
+<div class="section hidden" id="s7">
+<h1>Our Song 🎵</h1>
+<a href="https://youtu.be/SW4GXi4v3DU?si=yh7osCSLhr60moiT" target="_blank">This reminds me of us 💖</a>
+<p style="margin-top:15px; font-size:14px;">And this one always makes me think of you…</p>
+<a href="https://youtu.be/QKy6rfD8O2U?si=9U6tsfFd1GeVxtFy" target="_blank" style="display:block; margin-top:8px;">Click Here💜</a>
+</div>
+
+<div class="section hidden" id="s8">
+<h1>Things I love about you</h1>
+<p style="text-align:left">
+🕊️How patient and kind you are, even when life is messy<br>
+😂How you laugh at my silly jokes<br>
+🌟How you’ve changed my life in ways I didn’t know I needed<br>
+🥰How you make me feel so seen and loved<br>
+🥹How you always make me laugh, even on my hardest days<br>
+🤝How you support me in everything and believe in me<br>
+🫂How safe and calm you make me feel<br>
+🌤️How your presence alone can turn a hard day into something lighter<br>
+🏡How I feel at home with you<br>
+✨How you make our future feel exciting and possible
+</p>
+</div>
+
+<div class="section hidden" id="s9">
+<h1>Our Moments 📸</h1>
+<img id="gallery" src="dinner26.jpeg">
+<button onclick="nextPhoto()">Next Photo ➡️</button>
+</div>
+
+<div class="section hidden" id="s10">
+<h1>Happy First "Start of Us" Day</h1>
+<p>💝I wouldn’t want to do this with anyone else but you💝</p>
+<img src="valentines26.jpeg">
+</div>
+
+<div class="section hidden" id="s11">
+<h1>Thank you for everything 💜</h1>
+<p>For being here, for choosing me, for us.</p>
+</div>
+
+<div class="section hidden" id="s12">
+<h1>One more thing…</h1>
+<button onclick="showLove()">TAP HERE</button>
+</div>
+
+<div class="section hidden" id="s13">
+<div class="reveal">
+<h1>I love you</h1>
+<p>If I could go back… I’d still choose you. Every time.</p>
+</div>
+</div>
+
+<div class="section hidden" id="s14">
+<h1>And if I had to choose again…</h1>
+<p>I’d still choose you. Always 💜</p>
+
+<button onclick="goHome()" style="margin-top:30px;">
+Read it again🥰
+</button>
+</div>
+
+<div class="nav-buttons">
+<button onclick="prevSection()">GO BACK🔙</button>
+<button onclick="nextSection()">TAP HERE➡️</button>
+</div>
+
+</div>
+
+<script>
+let current = 1;
+const total = 14;
+
+function showSection(n){
+ document.querySelectorAll('.section').forEach(s=>s.classList.add('hidden'));
+ document.getElementById('s'+n).classList.remove('hidden');
+
+ const nav = document.querySelector('.nav-buttons');
+ nav.style.display = n >= 13 ? 'none' : 'flex';
+}
+
+function nextSection(){ if(current<total){current++;showSection(current);} }
+function prevSection(){ if(current>1){current--;showSection(current);} }
+function showLove(){ current=13; showSection(13); }
+
+function goHome(){
+ current = 1;
+ showSection(1);
+}
+
+let images=["dinner26.jpeg","boda.jpeg","mallpuebla.jpeg","january26.jpeg","parque2.jpg","febus.jpeg"];
+let index=0;
+
+function nextPhoto(){
+ index = (index + 1) % images.length;
+ document.getElementById("gallery").src = images[index];
+}
+</script>
+
+</body>
+</html>
